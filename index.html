@@ -11,45 +11,106 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="assets/js/script.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-3 "id="ytbox">
-            <a href=""> 
-                <img src="/assets/icons/youtube.png" style="filter:invert(100)" id="yt"> 
+
+    <!--  NAVBAR CONTENTS SECTION -->
+    <div class="row fixed-top" id="fir">
+        <div class="col-3 " id="parentytbox">
+            <a href="">
+                <img src="/assets/icons/youtube.png" style="filter:invert(100)" id="childyt">
             </a>
         </div>
-        <div class="col-6">
-            <nav class="navbar ">
+        <div class="col-6" id="parentheading">
+            <nav class="navbar">
                 <div class="container-fluid justify-content-center">
-                    <h1 id="heading">Vikram's Place</h1>
+                    <h1 id="childheading">Vikram's Journey</h1>
                 </div>
             </nav>
         </div>
         <div class="col-3" id="igbox">
-            <a href=""> 
-                <img src="/assets/icons/linkedin.png" style="filter:invert(100)" id="ig"> 
+            <a href="">
+                <img src="/assets/icons/linkedin.png" style="filter:invert(100)" id="ig">
             </a>
         </div>
 
     </div>
-    <div class="container-fluid" id="bg">
 
-    </div>
-    <div id="overlay">
-        
-    </div>
-    <div class="row ">
-        <div class="col-4"id="dpbox">
-            <img src="/assets/images/fotor_2023-5-15_12_57_42.png" id="dp">
+
+    <!--  BANNER BG CONTENTS SECTION -->
+
+
+    <div class="container-fluid" id="parentbg">
+
+        <div id="childoverlay" class="container-fluid">
         </div>
-        <div class="col-8"id="contents">
-     
+
+
+
+
+        <div class="row" id="bannercontents">
+            <div class="col-4 col-lg-4 " id="designerdiv">
+                <img src="/assets/icons/pen.png" id="desart1" class="img-fluid">
+                <h1 id="designer"> DESIGNER </h1>
+                <img id="desart3" src="assets/icons/idea.png" class="img-fluid">
+                <img src="/assets/icons/graphic-design.png" id="desart2" class="img-fluid">
+            </div>
+            <div class="col-4 col-lg-4" id="logodiv">
+                <img src="assets/images/1603737587747.png" id="banner" class="img-fluid">
+            </div>
+            <div class="col-4 col-lg-4" id="developerdiv">
+                <img src="/assets/icons/programming.png" id="devart1" class="img-fluid">
+                <h1 id="developer"> DEVELOPER </h1>
+                <img id="devart3" src="assets/icons/java-script.png" class="img-fluid">
+                <img src="/assets/icons/mysql.png" id="devart2" class="img-fluid">
+
+            </div>
         </div>
     </div>
+
+
+
+
+    <section class="hidden" id="sub">
+
+        scroll to see my expertise
+
+    </section>
+
+
+    <div class="logos">
+        <div class="row">
+            <div class="col-1 col-md-1 col-lg-1">
+
+            </div>
+
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
+                <img src="/assets/icons/html-5 (1).png" height="150px" width="150px" class="sha">
+            </div>
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
+                <img src="/assets/icons/css.png" height="150px" width="150px" class="sha">
+            </div>
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
+                <img src="/assets/icons/js.png" height="150px" width="150px" class="sha">
+            </div>
+            <div class="col-2 col-md-2 col-lg-2 logo hidden spacing">
+                <img src="/assets/icons/c-.png" height="150px" width="150px" class="sha">
+            </div>
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
+                <img src="/assets/icons/database.png" height="150px" width="150px" class="sha">
+            </div>
+            <div class="col-1 col-md-1 col-lg-1">
+                    
+            </div>
+        </div>
+    </div>
+
+    </section>
+
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>
