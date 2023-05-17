@@ -13,9 +13,14 @@
     src: url("/assets/fonts/AnthoniaSignature.ttf");
 }
 
+@font-face {
+    font-family:lemonmilk;
+    src: url("/assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
+}
 
-body {
-    background: linear-gradient(175deg, rgba(2, 0, 36, 1) 0%, rgba(42, 27, 61, 1) 34%, rgba(68, 52, 141, 1) 100%);
+
+#b1{
+    background: linear-gradient(175deg, rgba(2, 0, 36, 1) 0%, rgba(42, 27, 61, 1) 34%, #44348d 100%);
     background-repeat: no-repeat;
     height: 2000px;
     overflow-x: hidden;
@@ -23,7 +28,8 @@ body {
 }
 
 #fir{
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
+    height: 100px;
 }
 
 
@@ -47,6 +53,7 @@ body {
    
     height: 30px;
     width: 30px;
+    filter:invert(100);
 }
 
 #igbox {
@@ -59,15 +66,15 @@ body {
 #ig {
     height: 30px;
     width: 30px;
+    filter:invert(100);
 }
 
 #parentbg {
     position: relative;
-    top:108px;    
     background-image: url("/assets/images/IMG_20230212_145828.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 450px;
     background-position: center;
     padding: 0%;
     
@@ -78,7 +85,7 @@ body {
     z-index:1;
     background: linear-gradient(175deg, rgba(2, 0, 36, 1) 0%, rgba(42, 27, 61, 1) 34%, rgba(68, 52, 141, 1) 100%);
     opacity: 0.3;
-    height: 400px;
+    height: 450px;
     width:100%;
     padding: 0;
 }
@@ -87,7 +94,8 @@ body {
     position:absolute;
     z-index:2;
     top:0px;
-    height:400px;   
+    height:450px;
+    padding-top:50px;     
 }
 
 #logodiv{
@@ -171,17 +179,24 @@ text-shadow: -5px 2px 1px black  ;
     left:-125px;
 }
 
-section{
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height:50vh;
-    font-size:90px;
+#sub{
     font-family: sixcaps;
-    color:rgba(255, 255, 255, 0.486);
-   
+    color:rgba(245, 245, 245, 0.596);
+    text-align: center;
+    font-size: 75px;
+    letter-spacing: 2px;
 }
 
+#sec2{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom:25px;
+}
+
+.logos{
+        position: absolute;
+        padding-top:25px;
+}
 
 .hidden{
     opacity:0;
@@ -196,7 +211,6 @@ section{
     transform: translateX(0px);
 
 }
-
 .logo.hidden{
     opacity:0;
     filter: blur(5px);
@@ -221,12 +235,11 @@ section{
     display: flex;  
     top:0px;
 }
-.spacing{
-    padding:50px;
-}
+
 .sha    {
     color:black;
     filter: drop-shadow(5px 5px 1px);
+    
 }
 
 .logo:nth-child(2){
@@ -250,3 +263,59 @@ section{
     transition-delay:500ms;
 }
 
+.scroll-tracker{
+    height: 0.5rem;
+    inset:0 0 auto;
+    position: fixed;
+    background-color:#a200ff;
+    z-index:1;
+    transform-origin: left;
+
+}
+
+.circle {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    background-color: rgb(0, 217, 255); /* Adjust the color as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;;
+  }
+  
+  .circle img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+
+
+  #dmbtn{
+    font-family:lemonmilk;
+    background-color: black;
+    color:white;
+    font-size:15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #lmbtn{
+    font-family:lemonmilk;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #prbtn{
+    font-family:lemonmilk;
+    background-color: rgb(58, 24, 121);
+    color:rgb(255, 255, 255);
+    font-size:15px;
+    text-align: center;
+    cursor: pointer;
+  }

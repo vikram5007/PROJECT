@@ -15,13 +15,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="b1">
+    <script src="assets/js/script.js" type="module"></script>
 
     <!--  NAVBAR CONTENTS SECTION -->
     <div class="row fixed-top" id="fir">
+        <div class="scroll-tracker" id="scroll-tracker"></div>
+
         <div class="col-3 " id="parentytbox">
             <a href="">
-                <img src="/assets/icons/youtube.png" style="filter:invert(100)" id="childyt">
+                <img src="/assets/icons/youtube.png" id="childyt">
             </a>
         </div>
         <div class="col-6" id="parentheading">
@@ -33,11 +36,13 @@
         </div>
         <div class="col-3" id="igbox">
             <a href="">
-                <img src="/assets/icons/linkedin.png" style="filter:invert(100)" id="ig">
+                <img src="/assets/icons/linkedin.png" id="ig">
             </a>
         </div>
 
     </div>
+
+
 
 
     <!--  BANNER BG CONTENTS SECTION -->
@@ -71,46 +76,88 @@
         </div>
     </div>
 
+    <!--  SECTION 2 CONTENTS  -->
 
+    <div class="hidden" id="sec2">
+        <h1 id="sub">scroll to see my expertise</h1>
+    </div>
 
-
-    <section class="hidden" id="sub">
-
-        scroll to see my expertise
-
-    </section>
-
-
-    <div class="logos">
-        <div class="row">
+    <div class="logos justify-content-center">
+        <div class="row" id="langu">
             <div class="col-1 col-md-1 col-lg-1">
 
             </div>
 
-            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
-                <img src="/assets/icons/html-5 (1).png" height="150px" width="150px" class="sha">
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden">
+                <img src="/assets/icons/html-5 (1).png" class="sha img-fluid" id="ht">
             </div>
-            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
-                <img src="/assets/icons/css.png" height="150px" width="150px" class="sha">
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden">
+                <img src="/assets/icons/css.png" class="sha img-fluid">
             </div>
-            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
-                <img src="/assets/icons/js.png" height="150px" width="150px" class="sha">
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden ">
+                <img src="/assets/icons/js.png" class="sha img-fluid">
             </div>
-            <div class="col-2 col-md-2 col-lg-2 logo hidden spacing">
-                <img src="/assets/icons/c-.png" height="150px" width="150px" class="sha">
+            <div class="col-2 col-md-2 col-lg-2 logo hidden">
+                <img src="/assets/icons/c++ scg.svg" class="sha img-fluid">
             </div>
-            <div class=" col-2 col-md-2 col-lg-2 logo hidden spacing">
-                <img src="/assets/icons/database.png" height="150px" width="150px" class="sha">
+            <div class=" col-2 col-md-2 col-lg-2 logo hidden">
+                <img src="/assets/icons/database.png" class="sha img-fluid">
             </div>
             <div class="col-1 col-md-1 col-lg-1">
-                    
+
             </div>
         </div>
     </div>
 
-    </section>
+    <!--  SECTION 3 CONTENTS  -->
+
+
+
+
+
+    <!-- Button trigger modal -->
+
+    <div class="circle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <img src="assets/icons/themes.png" height="30px" width="30px">
+    </div>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Choose A Color </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button id="dmbtn"> DarkMode </button>
+                        </div>
+                        <div class="col-md-4"> 
+                            <button id="lmbtn"> LightMode </button>
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                            <button id="prbtn"> Purple </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js" type="module"></script>
+
+
+
+
 
 </body>
-<script src="assets/js/script.js"></script>
+
 
 </html>
