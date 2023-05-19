@@ -13,6 +13,7 @@
     src: url("/assets/fonts/AnthoniaSignature.ttf");
 }
 
+
 @font-face {
     font-family:lemonmilk;
     src: url("/assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
@@ -44,8 +45,9 @@
 #b1{
     background: linear-gradient(175deg, rgba(2, 0, 36, 1) 0%, rgba(42, 27, 61, 1) 34%, #44348d 100%);
     background-repeat: no-repeat;
-    height: 2500px;
+    height:4000px;
     overflow-x: hidden;
+    transition: all 2s;
 
 }
 
@@ -62,6 +64,7 @@
     font-weight: 500;
     font-size: 70px;
     text-align: center;
+    transition: all 2s;
 }
 
 #parentytbox {
@@ -76,6 +79,7 @@
     height: 30px;
     width: 30px;
     filter:invert(100);
+    transition: all 2s;
 }
 
 #igbox {
@@ -89,6 +93,7 @@
     height: 30px;
     width: 30px;
     filter:invert(100);
+    transition: all 2s;
 }
 
 #parentbg {
@@ -207,13 +212,12 @@ text-shadow: -5px 2px 1px black  ;
     text-align: center;
     font-size: 75px;
     letter-spacing: 2px;
-}
-
-#sec2{
     position: relative;
     padding-top: 25px;
     padding-bottom:25px;
 }
+
+
 
 .logos{
         position: absolute;
@@ -245,10 +249,7 @@ text-shadow: -5px 2px 1px black  ;
     filter: blur(0px);
     transform: translateX(0px);
     transition: all .9s;
-   
-
 }
-
 
 .logos{
     position: relative;
@@ -451,8 +452,8 @@ text-shadow: -5px 2px 1px black  ;
 .poster.hidden{
     opacity:0;
     filter: blur(5px);
-    transition:all .5s;
     transform: rotate3d(6, 0, 0, 60deg);
+    transition:1.5s;
 }
 
 .poster.show{
@@ -461,28 +462,6 @@ text-shadow: -5px 2px 1px black  ;
     transform: rotate3d(0, 0, 0, 90deg);
 }
 
-#down{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-#printbtn{
-    background-color: #ffffff;
-    border-radius:25px;
-    border:none;    
-    padding:25px;
-    height:100px;
-    text-align: center;
-    font-family: sixcaps;
-    color:rgba(133, 0, 221, 0.596);
-    font-size: 75px;
-    letter-spacing: 2px;
-    filter: drop-shadow(2px 2px 2px black);
-}
 
 #sec5heading{
     font-family: sixcaps;
@@ -545,7 +524,7 @@ text-shadow: -5px 2px 1px black  ;
     opacity:0;
     filter: blur(15px);
     transform: rotate3d(2, 1, 0, 90deg);
-    transition: all 1.5s;
+    transition: all .5s;
 }
 .card.show{
     opacity: 1;
@@ -563,8 +542,101 @@ text-shadow: -5px 2px 1px black  ;
     padding-bottom:75px;
 }
 .card-body{
+    font-family:nexa;
+}
+
+
+
+
+#sec6heading{
+    position: relative;
+    font-family: sixcaps;
+    color:rgba(245, 245, 245, 0.596);
+    text-align: center;
+    font-size: 75px;
+    letter-spacing: 2px;
+    top:125px;
+}
+#sec6{ 
+    position: relative;
+    top:150px;
+    width:75%;
+    height:729.6px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.sec6.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform:translateY(100px);
+    transition: all 2s;
+}
+
+.sec6.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+
+}
+
+#sec6bg{
+        position: absolute;
+        top:50px;
+        width:100%;
+        border-radius: 25px;
+        
+    }
+#sec6sub{
+        position: absolute;
+        top:50px;
+        width:100%;
+    }
+
+#topline{
+
+    position: absolute;
+    top:180px;
+    left:115px;
+    z-index: 2;
+    font-family:akira;
+    font-style:italic;
+    color:white;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#type{
+    position: absolute;
+    top:220px;
+    left:30px;
+    font-family:akira;
+    font-style:italic;
+    font-size: 60px;
+    color:#e9e9e9;
+    filter: drop-shadow(2px 2px 2px black);
+
+}
+.txtrep{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
     font-family:strecth;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    
 }
-.card-text{
-    font-family: nexa;
+
+
+#downloadbtn{
+position: absolute;
+top:450px;
+left:150px;
+font-family:nexa;
+filter: drop-shadow(2px 2px 1px black);
 }
+
+#mailbtn{
+position: absolute;
+top:450px;
+left:30px;
+font-family:nexa;
+filter: drop-shadow(2px 2px 1px black);
+}
+    
