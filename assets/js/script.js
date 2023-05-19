@@ -39,6 +39,8 @@ var lkin = document.getElementById("ig");
 var bgsrc=document.getElementById('backdrop');
 var subsrc=document.getElementById('subj');
 
+var print=document.getElementById("printbtn");
+
 
 
 var dmbtn = document.getElementById("dmbtn");
@@ -73,6 +75,17 @@ logoc.addEventListener("mouseleave", cunhoverer);
 
 logosql.addEventListener("mouseenter", sqlhoverer);
 logosql.addEventListener("mouseleave", sqlunhoverer);
+
+print.addEventListener("click",printer);
+
+function printer(){
+    var fileUrl = 'assets/images/res.docx';
+  var printWindow = window.open(fileUrl, '_blank');
+  
+  printWindow.addEventListener('load', function() {
+    printWindow.print();
+  });
+}
 
 
 function hthoverer() {
